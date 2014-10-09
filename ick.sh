@@ -20,10 +20,10 @@ export PATH
 yn="y"
 while [ "$yn" == "y" -o "$yn" == "Y" ]
 do
-    echo "env DISPLAY=:0 feh img/eg_bulboff.gif" | at now+25 minutes
-    echo "env DISPLAY=:0 feh img/eg_bulbon.gif"  | at now+30 minutes
+    echo "env DISPLAY=:0 feh ./img/eg_bulboff.gif" | at now+25 minutes
+    echo "env DISPLAY=:0 feh ./img/eg_bulbon.gif"  | at now+30 minutes
 
-    sleep 30m 
+    sleep 30m
     read -p "Please input (y/Y) to move on: " yn
 done
 
